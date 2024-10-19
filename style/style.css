@@ -1,0 +1,17 @@
+.parent{
+    border: 2px solid red;
+    display: grid;
+grid-template-areas:
+"item1 item1 item2 item2 " 
+"item3 item4 item4 item5"
+"item6 item7 item7 item5"
+"item8 item9 item10 item10"; 
+ }
+
+ .parent .child{
+
+ }
+
+ .parent .item1{
+ 
+ }
