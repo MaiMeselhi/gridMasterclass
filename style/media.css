@@ -1,13 +1,108 @@
 /*medium devices*/
-@media screen and (min-width:768px){
-  .parent{
-    border: 2px solid red;
+@media screen and (min-width: 768px) {
+  h5 {
+    color: var(--primary-color);
+    font-family: var(--Primary-font);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  h1 {
+    font-family: Arvo, sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  :root {
+    --primary-color: #9fa3a7;
+    --Primary-font: Montserrat, sans-serif;
+    --secondary-font: Arvo, sans-serif;
+  }
+  p {
+    color: var(--primary-color);
+  }
+  .parent {
+    background-color: black;
     display: grid;
-grid-template-areas:
-"item1 item1 item2 item2 " 
-"item3 item4 item4 item5"
-"item6 item7 item7 item5"
-"item8 item9 item10 item10"; 
- }
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: minmax(400px, auto);
+    grid-template-areas:
+      "item1 item1 item2 item2"
+      "item3 item4 item4 item5"
+      "item3 item4 item4 item5"
+      "item6 item7 item7 item5"
+      "item8 item9 item10 item10";
+  }
 
+  /****************item1***************/
+
+  .item1-content h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  /****************item2**************/
+
+  .item2 {
+  }
+
+  .item3 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .item3 h3 {
+    font-size: 22px;
+    margin: 20px 20px;
+  }
+
+  /****************item4**************/
+  .item4 .container {
+  
+    flex-direction: row;
+    column-gap: 40px;
+    justify-content: start;
+  }
+  .item4 h3{
+    margin-bottom: 20px;
+  }
+ 
+  /****************item5**************/
+
+  .item5 {
+  }
+  .item6 {
+  }
+  .item7 {
+  }
+  .item8 {
+  }
+  .item9 {
+  }
+  .item10 {
+ 
+  }
+  
+
+  .md-50 {
+    width: 50%;
+  }
+  .md-33 {
+    width: 33.333%;
+  }
+  .md-25 {
+    width: 25%;
+  }
+  .md-16 {
+    width: 16.66;
+  }
 }
